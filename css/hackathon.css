@@ -27,9 +27,6 @@
 .feature .outline-icon {
     color: #ff5359;
 }
-body {
-    font-family: "proxima-nova", "Proxima Nova", "AdobeBlank", Helvetica, Arial, sans-serif;
-}
 .feature#details .title {
 	margin: 0 0 40px 0;
 }
