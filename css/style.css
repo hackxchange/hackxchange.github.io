@@ -1,0 +1,108 @@
+.primary-navbar .navbar-nav > li > a:hover,
+.primary-navbar .navbar-nav > li > a:focus {
+  color: #ff5359;
+}
+.primary-navbar .navbar-nav > .active > a,
+.primary-navbar .navbar-nav > .active > a:hover,
+.primary-navbar .navbar-nav > .active > a:focus {
+  color: #ff5359;
+  border-bottom-color: #ff5359;
+}
+.navbar-brand {
+	margin-bottom: 6px;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.masthead-11 .gallery-cell:first-child {
+    background-image: url(../img/background.jpg);
+}
+.masthead .btn, .cta .btn {
+    margin-right: 16px;
+}
+.masthead .btn:last-child, .cta .btn:last-child {
+    margin-right: 0;
+}
+.feature .outline-icon {
+    color: #ff5359;
+}
+.feature#details .title {
+	margin: 0 0 40px 0;
+}
+.feature .title {
+	margin: 0 0 16px 0;
+}
+.cta, .feature-last {
+	text-align: center;
+}
+.cta .btn {
+	float: none;
+	margin-top: 20px;
+}
+.cta .heading {
+	line-height: 1.4;
+	font-size: 20px;
+}
+.cta .callout {
+    padding: 6px 8px;
+    border-radius: 5px;
+    background: #3495ff;
+    margin: 0 2px;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+	text-decoration: none;
+}
+.cta .callout:hover, .cta .callout:active {
+	color: white;
+}
+.cta .callout:hover {
+	background: #0d68cc;
+}
+.heading-line-break, .footer-line-break {
+	margin-top: 7px;
+}
+.footer-logo {
+	width: 100%;
+}
+.-inverse .heading small {
+    color: rgba(255, 255, 255, 0.65);
+}
+.highlight {
+	background-color: #fcff9d;
+}
+.field-shift {
+	left: -9999px;
+    position: absolute;
+}
+@media (max-width: 767px) {
+	.container .feature-block:last-child {
+		margin-bottom: 40px;
+	}
+}
+.cta-buttons {
+	line-height: 75px;
+}
+.cta-sponsor {
+	margin: -60px 0 40px;
+}
+section.first {
+	margin-top: 20px;
+}
+section.first .row {
+	margin-top: 20px;
+}
+section.first .row.first {
+	margin-top: 66px;
+}
+img.sponsor-graphic {
+    margin: 16px auto 30px auto;
+    max-width: 90%;
+    border: 1px solid black;
+    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.24);
+}
+.primary-btn {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
