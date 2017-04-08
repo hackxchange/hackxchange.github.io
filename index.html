@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="author" content="Sarthak Navjivan">
+    <meta name="author" content="Sarthak Navjivan and Yesh Chandiramani">
     <title>hackXchange</title>
 
     <link rel="icon" href="img/hxc-logo-unedited.png">
@@ -85,7 +85,7 @@
                                 <hr class="hr-light">
                                 <h3 class="subtext-header mt-2 mb-2">June 8th @ TBA</h3>
                             </div>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYdAfklNdbnIneT77WJgjuPbfxVvNTiaqXRaa-m1PIE_9NrQ/viewform?usp=sf_link" target="_blank" data-offset="90" class="btn btn-lg btn-outline-white wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-calendar"></i>Register Now</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYdAfklNdbnIneT77WJgjuPbfxVvNTiaqXRaa-m1PIE_9NrQ/viewform?usp=sf_link" target="_blank" data-offset="90" class="btn btn-lg btn-outline-white wow fadeInUp" data-wow-delay="0.2s" role="button"><i class="fa fa-calendar"></i>Register Now</a>
                         </div>
                     </div>
                 </div>
@@ -738,13 +738,14 @@
     </footer>
     <!--/Footer-->
 
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/tether.min.js"></script>
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Something wrong with it serving off of local, i dk why. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
 
     <script>
         //Animation init
@@ -753,12 +754,7 @@
         //Modal
         $('#myModal').on('shown.bs.modal', function () {
           $('#myInput').focus()
-        })
-        
-        $(document).ready(function() {
-            $('.mdb-select').material_select();
         });
-
     </script>
     
 </body>
