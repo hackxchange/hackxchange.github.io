@@ -14,7 +14,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/customizer.min.css">
-
 </head>
 
 <body class="grey-skin intro-page">
@@ -36,7 +35,6 @@
                 </a>
                 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                   
                     <!--Links-->
                     <ul class="navbar-nav mr-auto smooth-scroll">
                         <li class="nav-item">
@@ -738,14 +736,10 @@
     </footer>
     <!--/Footer-->
 
-    <!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/tether.min.js"></script>
-
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- Something wrong with it serving off of local, i dk why. -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
+    <script src="js/mdb.min.js"></script>
 
     <script>
         //Animation init
@@ -755,8 +749,20 @@
         $('#myModal').on('shown.bs.modal', function () {
           $('#myInput').focus()
         });
+
+        $('a').on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 120
+                }, 800, function() {
+                    window.location.hash = hash;
+                });
+            }
+        });
     </script>
-    
 </body>
 
 </html>
